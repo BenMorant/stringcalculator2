@@ -18,5 +18,23 @@ class StringCalculatorTest {
         assertThat(stringCalculator.Add(input)).isEqualTo(0);
     }
 
+    @Test
+    void should_return_1_when_input_is_String1() {
+        // Given
+        stringCalculator = new StringCalculator();
+        // When
+        String input = "1";
+        // Then
+        assertThat(stringCalculator.Add(input)).isEqualTo(1);
+    }
+    @Test
+    void should_return_1_when_input_is_String1comma2() {
+        // Given
+        stringCalculator = new StringCalculator();
+        // When
+        String input = "1,2";
+        // Then
+        assertThat(stringCalculator.Add(input)).isEqualTo(3);
+    }
 
 }
